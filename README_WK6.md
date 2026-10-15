@@ -102,11 +102,11 @@ START_HERE.md	      Detailed setup and sharing instructions
 VALIDATION.md	      Checks performed during project preparation and their limits
 
 **Who did what?**
-Ana developed the initial idea, brainstormed the problem and researched the concept. She shared a document explaining the proposed solution, which we discussed and agreed on.
+Ana developed the initial idea, brainstormed the problem and researched the concept. Ana shared a document explaining the proposed solution, which we discussed and agreed on.
 
-I used Claude and ChatGPT to generate much of the Python code and receive step-by-step setup guidance. I set up the project in VS Code, ran the supplied self-tests, and tested the Hugging Face model and Bluesky connection. The initial Reddit approach was blocked during API app creation, so the project was adapted to Bluesky. I then started the updated collector and opened the dashboard. So it did get delayed a bit.
+Rayna used Claude and ChatGPT to generate much of the Python code and receive step-by-step setup guidance. Rayna set up the project in VS Code, ran the supplied self-tests, and tested the Hugging Face model and Bluesky connection. The initial Reddit approach was blocked during API app creation, so the project was adapted to Bluesky. Rayna then started the updated collector and opened the dashboard. So it did get delayed a bit.
 
-I shared the project code with Ana, who is preparing the presentation slides. The coding assistance was substantial; our responsibility is to understand the final pipeline, review its limitations, and report only results supported by our actual collection and evaluation. 
+Rayna shared the project code with Ana, who is preparing the presentation slides. The coding assistance was substantial; our responsibility is to understand the final pipeline, review its limitations, and report only results supported by our actual collection and evaluation. 
 
 
 **Ethical reflection - what are the risks of your tool? Who could it harm?**
@@ -121,24 +121,6 @@ We do not store separate usernames or profile fields, and replace mentions in te
 
 **Development issue affecting collection:** We initially attempted Reddit, but app creation was blocked by the access/approval process. After testing an alternative connection, we changed the source to Bluesky and restarted setup with the new project. This delayed real collection. We will report the actual duration and dataset size and explain any unmet requirement. 
 
----
-
-## 3. Presentation -> [`presentation/`](presentation/)
-
-*Only fill this in for the week your group was selected to present. You need at least **one** of these across the whole term.*
-
-- [ ] My group presented in this week
-- [ ] Slides are in `presentation/`
-- [ ] Proof of the live demo is in `presentation/` (recording, screenshots, or link)
-
-**How did it go? What would I do differently next time?**
-
----
-
-## 4. Reflection
-
-**What is the most important thing I learned this week?**
-I learned that collecting data, analyzing it and displaying it are different parts of one system. Bluesky provides the posts, the Hugging Face model predicts sentiment, SQLite saves the results and Streamlit displays them. I also learned that code passing tests does not automatically mean the model is accurate on real posts. The Reddit access problem showed me why data-source access needs testing early, before relying on a long collection period.
 
 **Where does this connect to "AI for Good"?**
 The project explores how AI could help people review concerns about public transport infrastructure, supporting SDG 9. Its value depends on responsible interpretation: the tool should help an analyst decide what to investigate, while acknowledging missing voices, privacy risks and prediction errors. A chart should support careful human judgment rather than create false confidence about safety.
